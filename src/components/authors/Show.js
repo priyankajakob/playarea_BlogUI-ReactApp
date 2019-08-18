@@ -40,6 +40,7 @@ export default class AuthorShow extends React.Component {
     render(){
         return (
         <div>
+            <h2>Author Show Page</h2>
             <div>
                 {this.state.isLoading ? (<h3>Loading...</h3>) : 
                 (
@@ -61,6 +62,7 @@ export default class AuthorShow extends React.Component {
                         </div>
                     )
                 })}
+                <br/>
             <Link to="/authors">Back to Authors</Link>
         </div>
             

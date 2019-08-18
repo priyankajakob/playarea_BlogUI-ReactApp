@@ -57,6 +57,7 @@ export default class PostShow extends React.Component{
     render(){
         return (
             <div>
+                <h2>Post Show Page</h2>
                 <div style={divStyle}>
                     <h2>{this.state.post.title}</h2>
                     <h4>
