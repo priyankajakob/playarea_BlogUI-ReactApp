@@ -59,7 +59,14 @@ export default class PostShow extends React.Component{
             <div>
                 <div style={divStyle}>
                     <h2>{this.state.post.title}</h2>
-                    <h4>{this.state.post.userName && ('Written By : ' + this.state.post.userName)}</h4>
+                    <h4>
+                     { 
+                       (this.state.post.userName) 
+                        && 
+                      ( <Link to={`/authors/${this.state.post.userId}`}> {this.state.post.userName} </Link> 
+                       )
+                    }
+                    </h4>
                     <p>{this.state.post.body}</p>
                 </div>
                 {this.state.comments.map((comment,index) => {
