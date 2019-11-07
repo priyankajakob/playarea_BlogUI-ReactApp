@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/src-reduxlearning
+/src.zip
 /.pnp
 .pnp.js
 
